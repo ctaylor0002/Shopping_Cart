@@ -24,4 +24,7 @@ class ShoppingCart:
             price_to_add = item.price
             total_price = total_price + price_to_add
         return(total_price)
-        
+
+    def add_item_to_cart(self, item):
+        self.products.append(item)
+        print(self.products)

@@ -47,3 +47,8 @@ shopping_cart = ShoppingCart(first_item)
 products_to_count = shopping_cart.products
 value_of_cart = shopping_cart.calculate_price(products_to_count)
 print(f"The amount you will have to pay at check out is, ${value_of_cart:.2f}")
+
+#Add items to the cart
+second_item = Product('Squash', 3.00, 'Vegatable')
+shopping_cart.add_item_to_cart(second_item)
+
