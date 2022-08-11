@@ -38,6 +38,7 @@
 
 from shopping_cart import ShoppingCart
 from product import Product
+from customer import Customer
 
 #We will not instantiate the shopping cart object until a product is being added to avoid confusion
 first_item = Product('Apples', 2.50, 'Fruit')
@@ -57,4 +58,8 @@ shopping_cart.empty_shopping_cart()
 products_to_count = shopping_cart.products
 value_of_cart = shopping_cart.calculate_price(products_to_count)
 print('All items have been removed!')
+
+#Create a customer and add the shopping cart to them
+customer_name = 'Robin'
+customer = Customer(customer_name, shopping_cart)
 

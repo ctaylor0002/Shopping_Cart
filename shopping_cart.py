@@ -6,12 +6,6 @@
 
 #As a developer, I want the ShoppingCart class to have a method to empty all products from the shopping cart.
 
-#from product import Product
-
-
-
-
-
 class ShoppingCart:
 
     def __init__(self, product):
