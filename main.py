@@ -95,3 +95,9 @@ products_to_count = shopping_cart.products
 value_of_cart = customer.cart.calculate_price(products_to_count)
 print(f"The amount you will have to pay at check out is, ${value_of_cart:.2f}")
 
+#5.) Empty Shopping Cart
+shopping_cart.empty_shopping_cart()
+
+#6.) Confirm empty Shopping Cart
+customer.view_items_in_cart()
+

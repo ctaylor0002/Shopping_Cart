@@ -6,9 +6,6 @@
 
 #As a developer, I want the Customer class to have a method to view all products in the customer’s shopping cart. (Loop over the shopping cart’s products list and print each product to the terminal)
 
-#As a developer, I want to import the Customer and Product classes into main.py so I can instantiate a customer object as well as three Product objects and interact with the object’s methods:
-
-
 class Customer:
     
     def __init__(self, customer_name, shopping_cart):
@@ -20,6 +17,8 @@ class Customer:
     
     def view_items_in_cart(self):
         list = self.cart.products
-
-        for item in list:
-            print(item.product)
+        if list == []:
+            print("Your cart is empty!")
+        else:
+            for item in list:
+                print(item.product)
