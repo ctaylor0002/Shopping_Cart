@@ -35,3 +35,15 @@
 #5. Call the customer’s shopping cart’s empty cart method
 
 #6. Check if all products have been removed from the shopping cart
+
+from shopping_cart import ShoppingCart
+from product import Product
+
+#We will not instantiate the shopping cart object until a product is being added to avoid confusion
+first_item = Product('Apples', 2.50, 'Fruit')
+shopping_cart = ShoppingCart(first_item)
+
+
+products_to_count = shopping_cart.products
+value_of_cart = shopping_cart.calculate_price(products_to_count)
+print(f"The amount you will have to pay at check out is, ${value_of_cart:.2f}")
