@@ -19,12 +19,17 @@ class ShoppingCart:
     
     def calculate_price(self, products_to_count):
         total_price = 0
-        print(len(products_to_count))
-        for item in products_to_count:
-            price_to_add = item.price
-            total_price = total_price + price_to_add
-        return(total_price)
+        #print(len(products_to_count))
+        if products_to_count == []:
+            return 0
+        else:
+            for item in products_to_count:
+                price_to_add = item.price
+                total_price = total_price + price_to_add
+            return(total_price)
 
     def add_item_to_cart(self, item):
         self.products.append(item)
-        print(self.products)
+
+    def empty_shopping_cart(self):
+        self.products = []
