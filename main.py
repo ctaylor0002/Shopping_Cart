@@ -86,3 +86,12 @@ item_3 = Product('Cupcakes', 5.50, 'Snacks')
 customer.add_product(item_1)
 customer.add_product(item_2)
 customer.add_product(item_3)
+
+#3.) Call customer view cart function
+customer.view_items_in_cart()
+
+#4.) Call customer get total value function
+products_to_count = shopping_cart.products
+value_of_cart = customer.cart.calculate_price(products_to_count)
+print(f"The amount you will have to pay at check out is, ${value_of_cart:.2f}")
+
