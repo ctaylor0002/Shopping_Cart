@@ -17,3 +17,9 @@ class Customer:
 
     def add_product(self, new_item):
         self.cart.add_item_to_cart(new_item)
+    
+    def view_items_in_cart(self):
+        list = self.cart.products
+
+        for item in list:
+            print(item.product)
