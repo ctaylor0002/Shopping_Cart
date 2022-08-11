@@ -40,6 +40,8 @@ from shopping_cart import ShoppingCart
 from product import Product
 from customer import Customer
 
+#To begin the code commented out I utilized to test alot of these Object
+
 #We will not instantiate the shopping cart object until a product is being added to avoid confusion
 first_item = Product('Apples', 2.50, 'Fruit')
 shopping_cart = ShoppingCart(first_item)
@@ -68,3 +70,19 @@ customer.add_product(first_item)
 
 #View items in the shopping cart from the Customer class
 customer.view_items_in_cart()
+
+
+shopping_cart.empty_shopping_cart()
+#Start of problems 1-6
+
+#1.) Print Customers name
+print(customer.name)
+
+#2.) Add 3 items to cart via Customer class
+item_1 = Product('Steak', 10.50, 'Meat')
+item_2 = Product('Water', 3.00, 'Fluids')
+item_3 = Product('Cupcakes', 5.50, 'Snacks')
+
+customer.add_product(item_1)
+customer.add_product(item_2)
+customer.add_product(item_3)
