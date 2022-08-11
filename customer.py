@@ -14,3 +14,6 @@ class Customer:
     def __init__(self, customer_name, shopping_cart):
         self.name = customer_name
         self.cart = shopping_cart
+
+    def add_product(self, new_item):
+        self.cart.add_item_to_cart(new_item)

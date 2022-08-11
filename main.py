@@ -63,3 +63,8 @@ print('All items have been removed!')
 customer_name = 'Robin'
 customer = Customer(customer_name, shopping_cart)
 
+#Add item to the shopping cart from the Customer class
+customer.add_product(first_item)
+products_to_count = shopping_cart.products
+print(shopping_cart.calculate_price(products_to_count))
+
